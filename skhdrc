@@ -1,0 +1,42 @@
+###########################################################################
+#NOTE: The file is meant for use with SKHD to manage the hotkeys, and yabai
+#as the background window management. 
+###########################################################################
+
+
+#focus
+cmd - down : yabai -m window --focus south
+cmd - up : yabai -m window --focus north
+cmd - left : yabai -m window --focus west
+cmd - right : yabai -m window --focus east
+
+#swap windows
+cmd + shift - down : yabai -m window --swap south
+cmd + shift - up : yabai -m window --swap north
+cmd + shift - left : yabai -m window --swap west
+cmd + shift - right : yabai -m window --swap east
+
+#maximize window and resizing
+cmd + shift - f : yabai -m window --toggle zoom-fullscreen
+
+#send window to virtual desktop
+cmd + shift - 1 : yabai -m window --space 1
+cmd + shift - 2 : yabai -m window --space 2
+cmd + shift - 3 : yabai -m window --space 3
+cmd + shift - 4 : yabai -m window --space 4
+cmd + shift - 5 : yabai -m window --space 5
+
+#rotate left and right
+cmd + shift - j : yabai -m space --rotate 270
+cmd + shift - k : yabai -m space --rotate 90
+
+#Applications
+ctrl + lshift - return : open -na "iTerm"
+ctrl + lshift - c : open -na "Visual Studio Code"
+ctrl + lshift - f : open -a "Finder"
+ctrl + lshift - m : open -a "Spotify"
+ctrl + lshift - b : open -na "Safari"
+ctrl + lshift - y : open -na "ChatGPT"
+
+#Switch desktops 
+#ctrl + #
